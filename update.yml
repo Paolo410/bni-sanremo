@@ -1,0 +1,53 @@
+name: Aggiorna membri BNI
+
+on:
+  # Esegue ogni giorno alle 06:00 UTC (08:00 ora italiana)
+  schedule:
+    - cron: "0 6 * * *"
+  # Permette di eseguirlo manualmente dalla tab Actions su GitHub
+  workflow_dispatch:
+
+# Permessi necessari per fare commit e per GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  scrape-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Scarica il codice del repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Installa Python
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # 3. Installa le dipendenze
+      - name: Installa dipendenze
+        run: pip install -r requirements.txt
+
+      # 4. Esegue lo scraper → genera bni_sanremo_members.html
+      - name: Esegui scraper
+        run: python bni_scraper.py
+
+      # 5. Sposta l'HTML generato nella cartella docs/ (usata da GitHub Pages)
+      - name: Sposta HTML in docs/
+        run: |
+          mkdir -p docs
+          cp bni_sanremo_members.html docs/index.html
+
+      # 6. Fa il commit del file aggiornato nel repository
+      - name: Commit file aggiornato
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/index.html
+          # Se non ci sono modifiche (lista membri invariata) non fa commit
+          git diff --staged --quiet || git commit -m "Aggiorna lista membri BNI - $(date '+%Y-%m-%d %H:%M')"
+          git push

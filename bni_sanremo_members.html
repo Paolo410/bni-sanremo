@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BNI Sanremo – Corsaro Nero | Membri</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#CC0000;--dark-red:#990000;--white:#fff;--off-white:#fafafa;--gray:#555;--border:#e0e0e0}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Lato',sans-serif;background:var(--off-white);color:#222}
+/* ── HERO ── */
+.hero{display:flex;min-height:100vh;overflow:hidden}
+.hero-left{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 50px;background:#fff;position:relative}
+.hero-left::after{content:'';position:absolute;top:0;right:0;width:4px;height:100%;background:var(--red)}
+.bni-logo-large{width:300px;max-width:80%;margin-bottom:24px}
+.chapter-name{font-family:'Lato',sans-serif;font-weight:700;font-size:2.8rem;letter-spacing:.15em;color:#111;text-align:center}
+.hero-right{width:42%;background:var(--red);display:flex;flex-direction:column;justify-content:space-between;padding:60px 44px 40px;color:#fff}
+.hero-title-block{border-left:3px solid rgba(255,255,255,.4);padding-left:20px}
+.hero-title-block p{font-family:'Playfair Display',serif;font-style:italic;font-size:1.5rem;line-height:1.5;letter-spacing:.05em}
+.hero-title-block p span{font-weight:700;font-style:normal}
+.hero-desc{font-size:.95rem;line-height:1.7;opacity:.9}
+.hero-mission{border-top:1px solid rgba(255,255,255,.3);padding-top:30px}
+.hero-mission h3{font-family:'Playfair Display',serif;font-weight:700;font-size:1.1rem;letter-spacing:.1em;margin-bottom:12px;text-transform:uppercase}
+.hero-tagline{margin-top:auto;border-top:1px solid rgba(255,255,255,.3);padding-top:30px}
+.hero-tagline p{font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:1.6rem;line-height:1.4;text-align:center}
+.hero-footer{background:var(--red);border-top:3px solid var(--dark-red);padding:20px 40px;text-align:center;color:#fff;font-size:.9rem;line-height:1.7}
+/* ── SECTION HEADER ── */
+.section-header{background:var(--red);color:#fff;text-align:center;padding:50px 20px 40px;position:relative}
+.section-header h2{font-family:'Playfair Display',serif;font-size:2.4rem;font-weight:700;letter-spacing:.05em;margin-bottom:10px}
+.section-header p{font-size:1rem;opacity:.85}
+.section-header::after{content:'';position:absolute;bottom:-18px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:20px solid transparent;border-right:20px solid transparent;border-top:20px solid var(--red)}
+/* ── GRID ── */
+.members-container{max-width:1200px;margin:60px auto 80px;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:32px}
+/* ── CARD ── */
+.member-card{background:#fff;border-radius:4px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.07);border:1px solid var(--border);display:flex;flex-direction:column;transition:box-shadow .25s,transform .25s}
+.member-card:hover{box-shadow:0 8px 28px rgba(204,0,0,.15);transform:translateY(-3px)}
+.card-header{background:var(--red);padding:22px 22px 0;display:flex;align-items:flex-end;gap:18px;min-height:110px}
+.card-avatar{width:80px;height:80px;border-radius:50%;border:3px solid #fff;object-fit:cover;flex-shrink:0;background:#fff;position:relative;top:16px}
+.card-avatar-placeholder{width:80px;height:80px;border-radius:50%;border:3px solid #fff;flex-shrink:0;background:rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;position:relative;top:16px;font-size:1.8rem;color:rgba(255,255,255,.7)}
+.card-header-info{padding-bottom:14px;color:#fff;flex:1;min-width:0}
+.card-header-info h3{font-family:'Lato',sans-serif;font-weight:700;font-size:1rem;line-height:1.3;margin-bottom:4px}
+.card-firstname{font-weight:300;opacity:.85}
+.card-lastname{font-weight:700}
+.card-role{font-size:.8rem;opacity:.85;font-weight:300;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card-body{padding:28px 22px 18px;flex:1;display:flex;flex-direction:column;gap:10px}
+.card-company-row{display:flex;align-items:center;gap:10px}
+.card-company{font-weight:700;font-size:.95rem;color:var(--red)}
+.card-company-logo{height:28px;width:auto;object-fit:contain;border-radius:3px;flex-shrink:0}
+.card-address{font-size:.8rem;color:#888}
+.card-bio{font-size:.85rem;color:#555;line-height:1.6;flex:1}
+.card-footer{padding:14px 22px;border-top:1px solid var(--border);display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.card-phone{font-weight:700;font-size:.9rem;color:var(--red);text-decoration:none}
+.card-phone:hover{text-decoration:underline}
+.card-email{font-size:.82rem;color:var(--gray);text-decoration:none;word-break:break-all}
+.card-social-row{display:flex;gap:6px;align-items:center;margin-left:2px}
+.card-social img{opacity:.75;transition:opacity .2s}.card-social:hover img{opacity:1}
+.card-detail-link{margin-left:auto;font-size:.78rem;color:var(--red);text-decoration:none;border:1px solid var(--red);padding:3px 9px;border-radius:3px;white-space:nowrap}
+.card-detail-link:hover{background:var(--red);color:#fff}
+.site-footer{background:#111;color:rgba(255,255,255,.6);text-align:center;padding:30px 20px;font-size:.82rem}
+.site-footer strong{color:#fff}
+@media(max-width:700px){
+  .hero{flex-direction:column;min-height:auto}
+  .hero-left{padding:50px 30px}
+  .hero-left::after{width:100%;height:4px;top:auto;right:0;bottom:0}
+  .hero-right{width:100%;padding:40px 30px}
+  .chapter-name{font-size:2rem}
+  .members-container{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="hero-left">
+    <svg class="bni-logo-large" viewBox="0 0 320 120" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="120" fill="white"/>
+      <path d="M20 15 L20 105 L70 105 Q100 105 100 82 Q100 68 85 63 Q98 58 98 43 Q98 15 70 15 Z
+               M42 35 L65 35 Q77 35 77 46 Q77 57 65 57 L42 57 Z
+               M42 72 L68 72 Q80 72 80 84 Q80 96 68 96 L42 96 Z" fill="#CC0000"/>
+      <path d="M110 15 L110 105 L132 105 L132 50 L175 105 L197 105 L197 15 L175 15 L175 70 L132 15 Z" fill="#CC0000"/>
+      <path d="M207 15 L207 105 L229 105 L229 15 Z" fill="#CC0000"/>
+      <path d="M235 105 L260 15 L270 15 L245 105 Z" fill="#CC0000"/>
+      <text x="272" y="38" font-family="serif" font-size="18" fill="#CC0000">®</text>
+    </svg>
+    <div class="chapter-name">SANREMO</div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-title-block">
+      <p><span>B</span>USINESS<br><span>N</span>ETWORKING<br><span>I</span>NTERNATIONAL</p>
+      <p style="margin-top:14px;font-size:.92rem;">la più grande organizzazione a livello internazionale esperta nel <em>Marketing Referenziale</em></p>
+    </div>
+    <div class="hero-mission">
+      <h3>Mission</h3>
+      <p class="hero-desc">Aiutare i Membri ad aumentare il proprio business tramite un programma basato sul passaparola strutturato, positivo e professionale, che permetta loro di sviluppare relazioni significative e a lungo termine con imprenditori e professionisti di valore.</p>
+    </div>
+    <div class="hero-tagline">
+      <p>Cambiamo il modo<br>in cui il mondo<br>fa affari!</p>
+    </div>
+  </div>
+</section>
+<div class="hero-footer">
+  <strong>BNI SANREMO – Capitolo Corsaro Nero</strong><br>
+  INCONTRI SETTIMANALI: Ogni martedì ore 7:00–7:30 Business Breakfast · 7:30–9:00 Riunione operativa<br>
+  Palafiori di Sanremo – Corso Garibaldi 1 – Sanremo (IM)
+</div>
+<div class="section-header">
+  <h2>I Nostri Membri</h2>
+  <p>Professionisti e imprenditori del territorio che fanno rete ogni settimana</p>
+</div>
+<div class="members-container">
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=6332c8bd24b320000174b48c" alt="Alessandro Bellomi" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Alessandro</span> <span class="card-lastname">Bellomi</span></h3>
+        <div class="card-role">Auto/Car Rental/Leasing</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        <img class="card-company-logo" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=64c3d46ae4b0e88487ef8248" alt="logo">
+        <div class="card-company">www.noleggioarent.it</div>
+      </div>
+      <div class="card-address">📍 A RENT NOLEGGIO BELLOMI, Via Carducci 15, Sanremo</div>
+      <div class="card-bio">My Business Noleggio Auto medio lungo termine. Sono nell'attività del noleggio auto, moto, furgoni medio lungo termine da 5 anni dove aiuto i clienti nel proporgli la migliore soluzione per il loro noleggio e la scelta del veicolo adatto alle loro esigenze. Canoni da 24/36/48/60/72 mesi con o senza anticipo. Medium-long term car rental. I have been in the medium-long term car, motorbike and van rental business for three years where I help customers in offering them the best solution for their rental and choosing the vehicle suited to their needs. Rentals for 24/36/48/60/72 months.</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:3400061836">📞 3400061836</a>
+      
+      <div class="card-social-row"><a class="card-social" href="http://www.facebook.com/rentbellomi/" target="_blank" title="Facebook"><img src="https://www.google.com/s2/favicons?domain=facebook.com" alt="Facebook" width="16" height="16"></a><a class="card-social" href="http://linkedin.com/in/alessandro-bellomi-9ab11b54" target="_blank" title="LinkedIn"><img src="https://www.google.com/s2/favicons?domain=linkedin.com" alt="LinkedIn" width="16" height="16"></a></div>
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=S6NWygDMVavXhu0zXcaCWg%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=6305e7d5098e1500015d17c9" alt="Alessandro D'Ambrosio" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Alessandro</span> <span class="card-lastname">D'Ambrosio</span></h3>
+        <div class="card-role">Hospice</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        <img class="card-company-logo" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=617ff9560cf2d599bc2b4c8f" alt="logo">
+        <div class="card-company">www.residenzedelsollievo.it</div>
+      </div>
+      <div class="card-address">📍 Fondazione Iolanda Ferrara, Via Roma, 21, Via delle Rimembranze, 3  (Apricale)</div>
+      <div class="card-bio">My Business LE RESIDENZE DEL SOLLIEVO si impegnano con passione e dedizione a proteggere, assistere e valorizzare la vita degli anziani attraverso un servizio umano, specializzato e innovativo che promuove la qualità della vita, la serenità delle famiglie e un modello di cura fondato sull’amore per il prossimo, contribuendo a costruire una comunità più sensibile, solidale e consapevole del valore inestimabile della terza età.</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:3317084635">📞 3317084635</a>
+      
+      <div class="card-social-row"><a class="card-social" href="https://www.facebook.com/residenzedelsollievo/" target="_blank" title="Facebook"><img src="https://www.google.com/s2/favicons?domain=facebook.com" alt="Facebook" width="16" height="16"></a></div>
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=YVeYZSWjTbZwabA38hRskA%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=632b1510e4b0a2de8bd6e640" alt="Alessandro Goso" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Alessandro</span> <span class="card-lastname">Goso</span></h3>
+        <div class="card-role">Health & Wellness Products</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        <img class="card-company-logo" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=63286cb7e4b0a2de8bd6d77c" alt="logo">
+        <div class="card-company">Dr. Alessandro Goso Farmacia Goso Via C. Aprosio 466 vallecrosia Italia/Liguria/Imperia 18019</div>
+      </div>
+      <div class="card-address">📍 Farmacia Goso, Via C. Aprosio 466, vallecrosia</div>
+      <div class="card-bio">My Business produzione prodotti omeopatici cosmetici vegetali e spedizione all'utilizzatore finale del prodotto . Personalizzazione dei prodotti . Ricerca sostanze per il cliente.</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:0184294375">📞 0184294375</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=XBWdP9RA%2Bgv%2FN4cOZTKDcg%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=6737163e9f7f0b0001ba5e52" alt="Alessandro  Zanini" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Alessandro</span> <span class="card-lastname">Zanini</span></h3>
+        <div class="card-role">Health Facility/Gym/Club</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">Mr. Alessandro  Zanini Fitness Lab Via defisiu 1 Bordighera 18012</div>
+      </div>
+      <div class="card-address">📍 Fitness Lab, Via defisiu 1, Bordighera</div>
+      <div class="card-bio">My Business Fitness Lab è molto più di una palestra. È un centro specializzato in programmi di allenamento personalizzati, dove la salute e il benessere delle persone sono al centro di ogni scelta. Grazie a una formazione di altissimo livello e a un approccio scientifico, Fitness Lab si distingue nel panorama del fitness moderno per serietà, competenza e risultati concreti. La nostra missione è guidare ogni persona verso uno stile di vita sano, attivo e sostenibile, rendendo l’esercizio fisico un pilastro fondamentale di prevenzione e qualità della vita.</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:3495265734">📞 3495265734</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=RnueXIu%2BKAsZ0LBCm33%2Frw%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=691f6e34d58b730001f4c3f6" alt="Alessio Senis" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Alessio</span> <span class="card-lastname">Senis</span></h3>
+        <div class="card-role">Technicians - Audio, Video</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        <img class="card-company-logo" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=69218a45e4b00123286892d3" alt="logo">
+        <div class="card-company">Mr. Alessio Senis Rosenhouse Studio Via Roma 97 - Industrie Musicali - Vallecrosia</div>
+      </div>
+      <div class="card-address">📍 Rosenhouse Studio, Via Roma 97 - Industrie Musicali -, Vallecrosia</div>
+      <div class="card-bio">My Business Il Rosenhouse Studio è il nostro quartier generale del suono: ci occupiamo di produzione musicale, registrazione, mixaggio e mastering. Negli ultimi anni abbiamo avuto il piacere di collaborare con realtà di primo piano nel mondo discografico, tra cui Sony Music, Warner Chappell, Universal Music e Vivo Concerti: sì, anche se siamo "in provincia" ci capita di lavorare con gente… importante! In studio creiamo anche podcast di alta qualità per aziende e professionisti, seguendo tutto il percorso: dall’idea alla pubblicazione. Supportiamo inoltre eventi live, installazioni audio e progetti di trattamento acustico di studi, sale conferenze e altri spazi che hanno bisogno di suonare davvero bene.</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:+393881580400">📞 +393881580400</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=X%2FKSlOEP8Nh74Zfgrvpqxw%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=683a3affd354120001203ca5" alt="Alessio  Benedetto" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Alessio</span> <span class="card-lastname">Benedetto</span></h3>
+        <div class="card-role">Musicians</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        <img class="card-company-logo" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=683a320cf720d30001a8b873" alt="logo">
+        <div class="card-company">Mr. Alessio  Benedetto Camp Rock Ads / Industrie Musicali Via Colonnello Aprosio 208 Vallecrosia 18019</div>
+      </div>
+      <div class="card-address">📍 Camp Rock Ads / Industrie Musicali, Via Colonnello Aprosio 208, Vallecrosia</div>
+      <div class="card-bio">My Business CAMP ROCK ASD & INDUSTRIE MUSICALI: dal 2018 Sport, Musica, Lezioni di Musica, , Organizzazione di eventi, Centro Estivo e Project Management. Un'organizzazione per i ragazzi e per eventi divertenti. Entusiasmo e duro lavoro al servizio di genitori e ragazzi</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:+393402554595">📞 +39 340 255 4595</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=wlLLzGsdqzxc5ij4vgAtyw%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=632f397824b320000174b38c" alt="Andrea Lauro" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Andrea</span> <span class="card-lastname">Lauro</span></h3>
+        <div class="card-role">Windows & Doors</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        <img class="card-company-logo" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=632f497de4b0a2de8bd6fb86" alt="logo">
+        <div class="card-company">WWWSERRAMENTILAURO.COM</div>
+      </div>
+      <div class="card-address">📍 Lauro srl, Via Biancheri 18 (uffici), Ventimiglia</div>
+      <div class="card-bio">My Business Produttore  e Posatore di Infissi & Serramenti SPECIALIZZATI  IN PROGETTI RESIDENZIALI  ED INDUSTRIALI</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:0184238505">📞 0184238505</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=eFwWVBcq4jwCghWboNM7GA%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=64abe22ae4b09df7bc4c2858" alt="Antonella Luciani" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Antonella</span> <span class="card-lastname">Luciani</span></h3>
+        <div class="card-role">Professional Organizer</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">Mrs. Antonella Luciani Private Community Strada Ciaixe snc CAMPOROSSO 18033</div>
+      </div>
+      <div class="card-address">📍 Private Community, Strada Ciaixe snc, CAMPOROSSO</div>
+      <div class="card-bio">My Business Affianco gli imprenditori nel far crescere le proprie aziende facendo aumentare fatturati e marginalità, creando ambienti di lavoro stimolnati dove le persone possano esprimere i loro talenti e sentirsi realizzati non solo in ambiente lavorativo ma anche professionale.</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:3475027691">📞 3475027691</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=nycxMklfcqpIJ5kantIkxw%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=633fc085717281000153c2c4" alt="Antonio Patanè" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Antonio</span> <span class="card-lastname">Patanè</span></h3>
+        <div class="card-role">Electrician</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">www.elettrico-pa.com</div>
+      </div>
+      <div class="card-address">📍 Elettrico di Patanè Antonio s.r.l., Via Garibaldi, 16, Perinaldo</div>
+      <div class="card-bio">My Business Impianti elettrici, civili industriali,domotica, allarme,reti internet, videosorveglianza, controllo accessi, fotovoltaico, eolico(Italia,Francia ,Monaco) Distributore Liguria Ant,"optima" Distributore Liguria Dynamo</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:0184639020">📞 0184639020</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=Ih%2FwHcT70LYNr7NNTV6Gzg%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=632f1c84e4b0a2de8bd6f9eb" alt="Céline HAOND" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Céline</span> <span class="card-lastname">HAOND</span></h3>
+        <div class="card-role">Translator/Language Services</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        <img class="card-company-logo" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=632f1e25e4b0a2de8bd6f9f3" alt="logo">
+        <div class="card-company">Mrs. Céline HAOND MONACO TRADUCTION C/O The Office / L'Albu 17, Avenue Albert II Principauté de MONACO 98000</div>
+      </div>
+      <div class="card-address">📍 MONACO TRADUCTION, C/O The Office / L'Albu 17, Avenue Albert II, Principauté de MONACO</div>
+      <div class="card-bio">My Business Traduttrice / Interprete (italiano / inglese / francese ) / Direttrice di agenzia di traduzione. Oltre a dedicarmi alla traduzione, insegno anche le lingue con le quali lavoro all'interno delle società ma anche ai privati. Le lezioni si possono svolgere sia in presenza che a distanza (piattaforma Zoom o Skype). Possibilità di ottenere certificazioni riconosciute al livello internazionale delle lingue inglese, francese e italiana.</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:0033619809918">📞 0033619809918</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=rBr3fyE6ZfHbpH7Ot3PECQ%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=633e7601e4b0a2de8bd7486c" alt="Claudio Poggi" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Claudio</span> <span class="card-lastname">Poggi</span></h3>
+        <div class="card-role">Architecture & Engineering (Other)</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">Mr. Claudio Poggi Studio ing. Poggi Claudio Via Col. G. Aprosio n. 286 Vallecrosia Italia/liguria/imperia 18019</div>
+      </div>
+      <div class="card-address">📍 Studio ing. Poggi Claudio, Via Col. G. Aprosio n. 286, Vallecrosia</div>
+      <div class="card-bio">My Business Sono ingegnere libero professionista con studio in Vallecrosia (IM) da oltre 40 anni. La mia attività professionale si concretizza nella gestione operativa dei progetti edilizi, dall'ideazione alla consegna delle chiavi al cliente. Le competenze che metto a disposizione sono una progettazione innovativa e di qualità, la direzione dei lavori frutto di una ricca esperienza, la disponibilità al lavoro in team e la capacità  di affrontare e risolvere positivamente i problemi che nascono in cantiere.</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:3358155664">📞 3358155664</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=p0jAzlHGk%2F1ktXNRP%2FqGYw%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://cdn.bniconnectglobal.com/images/profile-default.jpg" alt="Consuelo Borgese" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Consuelo</span> <span class="card-lastname">Borgese</span></h3>
+        <div class="card-role">Interior Design - Commercial</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">Consuelo Borgese Consuelo Borgese Interior Designer Camporosso strada degli olandesi 140 Camporosso 18033</div>
+      </div>
+      <div class="card-address">📍 Consuelo Borgese Interior Designer, Camporosso strada degli olandesi 140, Camporosso</div>
+      <div class="card-bio">My Business Interior Designer</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:3409739975">📞 3409739975</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=xjscBBx5shCHx8%2FrWh295g%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=634592bcffc4c3000175c1bb" alt="Daniele La Greca" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Daniele</span> <span class="card-lastname">La Greca</span></h3>
+        <div class="card-role">Surveyor</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">Mr. Daniele La Greca La Greca Daniele via Ruffini 10 ventimiglia 18039</div>
+      </div>
+      <div class="card-address">📍 La Greca Daniele, via Ruffini 10, ventimiglia</div>
+      <div class="card-bio">My Business Geometra</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:3391009159">📞 3391009159</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=N0gUVJcfgmgGcQ7GlnycQA%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=6329f07d308b8100010ee1fc" alt="Dario D'Esposito" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Dario</span> <span class="card-lastname">D'Esposito</span></h3>
+        <div class="card-role">Consulting (Other)</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        <img class="card-company-logo" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=645517dae4b043e77e2f8f1f" alt="logo">
+        <div class="card-company">Mr. Dario D'Esposito Dario D'esposito Via Roma 17 Ventimiglia 18039</div>
+      </div>
+      <div class="card-address">📍 Dario D'esposito, Via Roma 17, Ventimiglia</div>
+      <div class="card-bio">My Business Consulente Finanziario</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:+393355780481">📞 +393355780481</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=cMLfqkyThSPxtt9%2FVz1ovg%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=63fb82da6484d40001a4bd7e" alt="Elisa Amelia" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Elisa</span> <span class="card-lastname">Amelia</span></h3>
+        <div class="card-role">Occupational Safety</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">Dr. Elisa Amelia ELISA  AMELIA Via Annunziata 16 San Biagio Della Cima 18036</div>
+      </div>
+      <div class="card-address">📍 ELISA  AMELIA, Via Annunziata 16, San Biagio Della Cima</div>
+      <div class="card-bio">My Business Formazione e consulenza tecnica in materia di sicurezza sul lavoro</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:3342538732">📞 3342538732</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=6BNoAkewP6%2BvB1aVBAiO6g%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=6615908453edf40001d85377" alt="Elisabetta  Marchetti" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Elisabetta</span> <span class="card-lastname">Marchetti</span></h3>
+        <div class="card-role">Clothing & Accessories Retailer</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">www.confezionimarchetti.it</div>
+      </div>
+      <div class="card-address">📍 Elisabetta Marchetti, Via Cavour 67, Ventimiglia</div>
+      <div class="card-bio">My Business Vendita al dettaglio  di abbigliamento e accessori per uomo e per donna. CONFEZIONI MARCHETTI. Negozio storico per uomo si trova nella via principale di Ventimiglia. Fornisco  camicie su misura  esclusive e personalizzate e abbigliamento sia casual che elegante per tutte le occasioni e in tutte le taglie, anche conformate. Nel 2017 ho aperto 63viacavour, negozio per donna.</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:0184351677">📞 0184351677</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=NBbwZMtiCT5qK7h6VxmDcA%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=68298133347ca4000158cfd4" alt="Enrico Formaggini" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Enrico</span> <span class="card-lastname">Formaggini</span></h3>
+        <div class="card-role">Tile Worker</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">Enrico Formaggini Formaggini marmi Via frantoi canai40 Sanremo 18038</div>
+      </div>
+      <div class="card-address">📍 Formaggini marmi, Via frantoi canai40, Sanremo</div>
+      <div class="card-bio">My Business Realizziamo lavorati in marmo, granito, quarzi e ceramiche, che siano cucine, pavimenti, rivestimenti esterni etc. Inoltre disponiamo di 2000 m2 di deposito lastre dove i nostri clienti possono vedere dal vivo il materiale che andranno ad utilizzare per il proprio progetto</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:0184514341">📞 0184514341</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=UlOxLTsTc925fplpbZL6Qg%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=671dcc6cb29289000131087f" alt="Francesco  Fondacaro" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Francesco</span> <span class="card-lastname">Fondacaro</span></h3>
+        <div class="card-role">Interior Design</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">Mr. Francesco  Fondacaro Maison 2f SAS 27;BD de l' 'Ariane Nice 06300</div>
+      </div>
+      <div class="card-address">📍 Maison 2f SAS, 27;BD de l' 'Ariane, Nice</div>
+      <div class="card-bio">My Business Siamo presenti sul territorio da oltre 20anni ...ci occupiamo di una serie di servizi mirati all estetica sia di interni che esterni  di pittura e di decorazioni . Offriamo assistenza nella scelta dei colori più adatti alle esigenze dei clienti,collaboriamo con designer e architetti per integrare la pittura e la decorazione nel progetto complessivo di interior design</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:+393207238240">📞 +39 320 7238240</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=RFiw7AsXgzrW7cU3UP13oQ%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=63297546e4b0a2de8bd6dc2e" alt="Fulvio Manuello" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Fulvio</span> <span class="card-lastname">Manuello</span></h3>
+        <div class="card-role">Food & Beverage (Other)</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        <img class="card-company-logo" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=6329bbfbe4b0a2de8bd6de33" alt="logo">
+        <div class="card-company">coffeel.it</div>
+      </div>
+      <div class="card-address">📍 Coffeel Quality Coffee Experience - Oromo Tribu sas, via xxv aprile n. 4, ventimiglia</div>
+      <div class="card-bio">My Business Sono imprenditore artigiano nel settore del Caffè Specialty e Biologico. Attraverso studio, formazione, consulenze e viaggi in piantagione ho affinato le competenze necessarie per creare un laboratorio didattico/pratico di tostatura e somministrazione del caffè. Aiuto personalmente imprenditori a realizzare il loro progetto nel Mondo del Caffè di Qualità. Il Caffè, prodotto agroalimentare, è la seconda commodity al mondo che offre grandi opportunità redditizie. E' indispensabile conoscere il settore in cui si opera, requisito irrinunciabile per raggiungere con efficacia i propri obbiettivi. Scopri il mio Business : vivi la Coffee Experience da Sommelier, una degustazione esclusiva di caffè con metodi di estrazione differenti. "Tocca con mano" il cambiamento del chicco verde attraverso la  tostatura.</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:+393805853677">📞 +39 3805853677</a>
+      
+      <div class="card-social-row"><a class="card-social" href="https://www.facebook.com/coffeel.qualitycoffee.experience/" target="_blank" title="Facebook"><img src="https://www.google.com/s2/favicons?domain=facebook.com" alt="Facebook" width="16" height="16"></a><a class="card-social" href="https://www.linkedin.com/in/fulvio-manuello/" target="_blank" title="LinkedIn"><img src="https://www.google.com/s2/favicons?domain=linkedin.com" alt="LinkedIn" width="16" height="16"></a><a class="card-social" href="https://www.youtube.com/channel/UC3lJPPYwxWXJYKAry7QecuA" target="_blank" title="Sito web"><img src="https://www.google.com/s2/favicons?domain=google.com" alt="Sito web" width="16" height="16"></a></div>
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=uKeIO%2FWnpODeIi%2F5MjFSIQ%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://cdn.bniconnectglobal.com/images/profile-default.jpg" alt="Giacomo Borfiga" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Giacomo</span> <span class="card-lastname">Borfiga</span></h3>
+        <div class="card-role">Flooring</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">Mr. Giacomo Borfiga Borfiga parquet Via monsignor peitavino Ventimiglia 18039</div>
+      </div>
+      <div class="card-address">📍 Borfiga parquet, Via monsignor peitavino, Ventimiglia</div>
+      
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:+393883405404">📞 +39 388 340 5404</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=fVV0c6JhrFJbjWSuHfqgtA%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=644400b0e4b0e7b44c6fd1c4" alt="Giancarlo Sciutto" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Giancarlo</span> <span class="card-lastname">Sciutto</span></h3>
+        <div class="card-role">Solar</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        <img class="card-company-logo" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=65afbfbde4b029b6a45fb7a8" alt="logo">
+        <div class="card-company">Mr. Giancarlo Sciutto Sole&luna srl Piazzale libertà 1 Cuneo Italia/liguria/imperia 12100</div>
+      </div>
+      <div class="card-address">📍 Sole&luna srl, Piazzale libertà 1, Cuneo</div>
+      <div class="card-bio">My Business AGGIORNAMENTO OPERATIVO -SIAMO ALLA RICERCA DI TERRENI  MINIMO 2500 MQ , DA QCQUISTARE PER INSTALLARE IMPOIANTI FOTOVOLTAICI o SUPERFICI DI CAPANNONI DA AFFITTARE ( minimo 500 mq ) per installare impianti fotovoltaici SIAMO FORNITORI DI materiale per  IMPIANTI FOTOVOLTAICI    , SETTORE IN ESPANSIONE SONO LE PERGOLE- POSTI AUTO PER PRIVATI, AZIENDE COMMERCIALI EPRODUTTIVE come alternativa per installare impianti fotovoltaici. IMPORTANTE _ LE STRUTTURE CON FVT HANNO LE STESSE AGEVOLAZIONI  NEL SETTORE ENERGETICO -BONUS - DISPONIBILI PER ESAMINARE I LUOGHI DI INSTALLAIZONE E DISPORRE OFFERTA ADEGUATA ALLE NECESSITA'</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:3461085396">📞 3461085396</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=3roAr3g%2F8w2f8hHMYky88A%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=633b6c345937a800010aeede" alt="Giuseppe Carpentieri" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Giuseppe</span> <span class="card-lastname">Carpentieri</span></h3>
+        <div class="card-role">Builder/General Contractor</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">www.carpentieri.org</div>
+      </div>
+      <div class="card-address">📍 Carpentieri Srl, Via Gallardi 194, Ventimiglia</div>
+      <div class="card-bio">My Business Costruzioni & Ristrutturazioni chiavi in mano. Da oltre 20 anni lavoriamo in Costa Azzurra con la collaborazione di Architetti e Agenzie immobiliari Leader nel settore</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:+393896641000">📞 +393896641000</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=QAEpCY9PiJzk7xI3%2B4bWyg%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=65ef565ae4b0e02dd7778e09" alt="Iole Maria Carminati" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Iole</span> <span class="card-lastname">Maria Carminati</span></h3>
+        <div class="card-role">Employment Law Consultant</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        <img class="card-company-logo" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=65ef5900e4b0e02dd7778e29" alt="logo">
+        <div class="card-company">www.iolecarminati.it</div>
+      </div>
+      <div class="card-address">📍 Studio Carminati Iole Maria, Corso Genova 78, Ventimiglia</div>
+      <div class="card-bio">My Business Consulente del Lavoro, amministrazione del personale, Contenzioso del lavoro, Consulenza previdenziale e fiscale, Delegata Fondazione consulenti del lavoro, Tirocini, Certificatore Asse.co</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:0184253140">📞 0184253140</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=zA71XZVApPb05EDYyNF%2BDg%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=67b9c591fa9fc30001a7b289" alt="Jacopo Barone Moro" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Jacopo</span> <span class="card-lastname">Barone Moro</span></h3>
+        <div class="card-role">Flooring Retail</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">Www.moroidraulica.it</div>
+      </div>
+      <div class="card-address">📍 Moro srl, Via Vittorio Emanuele II 274, Bordighera</div>
+      <div class="card-bio">My Business Moro Idraulica siamo una azienda familiare fondata nel 1934 a Bordighera, di cui rappresento la 4 generazione. Offriamo una vasta gamma di prodotti per la ristrutturazione della casa, tra cui arredi bagno, ceramiche, pavimenti, radiatori. L’azienda fornisce anche materiali professionali per installatori, come caldaie, rubinetti, sanitari, soffioni doccia, radiatori, impianti a pavimento, impianti solari e pompe di calore. Organizziamo seminari di aggiornamento e giornate in negozio con partner per presentare nuovi materiali e soluzioni nel campo del design rivolto ad architetti e progettisti. L’esperienza dell’azienda è a disposizione dei clienti per consulenze sulla disposizione e sull’arredamento della casa, offrendo anche servizi post-vendita per interventi tempestivi in caso di difetti o sostituzione di parti usurate.</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:3486928349">📞 3486928349</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=TbzDml09mhdUGI8NiakC8w%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=676951dd48ac6d0001f57310" alt="Lorenzo Bernabò" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Lorenzo</span> <span class="card-lastname">Bernabò</span></h3>
+        <div class="card-role">Apartment Administrator</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        <img class="card-company-logo" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=632ab4ebe4b0a2de8bd6e30c" alt="logo">
+        <div class="card-company">Mr. Lorenzo Bernabò dr. Lorenzo Bernabò Via Col. Aprosio n. 247 Vallecrosia Italia/Liguria/Imperia 18019</div>
+      </div>
+      <div class="card-address">📍 dr. Lorenzo Bernabò, Via Col. Aprosio n. 247, Vallecrosia</div>
+      <div class="card-bio">My Business Gestione immobiliare a tutto tondo, dai servizi relativi alle esigenze legate alla vivibilitá degli ambienti condominiali</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:3287433304">📞 3287433304</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=AnQ%2F4u%2B8pn5YMUuP%2FqP%2BtA%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=645f54c99ec87900014478c4" alt="Luca Salvetto" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Luca</span> <span class="card-lastname">Salvetto</span></h3>
+        <div class="card-role">HVAC - Heating & Air</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        <img class="card-company-logo" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=645b3bcfe4b043e77e2faaad" alt="logo">
+        <div class="card-company">www.sanremoimpianti.com</div>
+      </div>
+      <div class="card-address">📍 Sanremo impianti sas, Via Padre Semeria, 145, Sanremo</div>
+      <div class="card-bio">My Business Impiantistica idraulica civile residenziale Idrosanitari, riscaldamento, climatizzazione, gas, antincendio, piscine.</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:3387438432">📞 3387438432</a>
+      
+      <div class="card-social-row"><a class="card-social" href="http://www.facebook.com/sanremoimpianti" target="_blank" title="Facebook"><img src="https://www.google.com/s2/favicons?domain=facebook.com" alt="Facebook" width="16" height="16"></a><a class="card-social" href="http://www.linkedin.com/in/luca-salvetto-34b7a293" target="_blank" title="LinkedIn"><img src="https://www.google.com/s2/favicons?domain=linkedin.com" alt="LinkedIn" width="16" height="16"></a></div>
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=q%2BN6KawBPEoOgs69juybtw%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=66217836e4b02d2fc979ddf2" alt="Mabel Riolfo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Mabel</span> <span class="card-lastname">Riolfo</span></h3>
+        <div class="card-role">Litigation</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">www.studiolegaleriolfo.it</div>
+      </div>
+      <div class="card-address">📍 Avv. Mabel Riolfo, Via Cavour, 20, Ventimiglia</div>
+      
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:3939347093">📞 3939347093</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=x4ZjScvTHGY31v6bGH%2FUIA%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=6340141777388a00017bdaa5" alt="Margherita Mariella" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Margherita</span> <span class="card-lastname">Mariella</span></h3>
+        <div class="card-role">Architect</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        <img class="card-company-logo" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=636139efe4b0f219395192e8" alt="logo">
+        <div class="card-company">Mrs. Margherita Mariella Margherita Mariella via primo maggio 50 bordighera 18012</div>
+      </div>
+      <div class="card-address">📍 Margherita Mariella, via primo maggio 50, bordighera</div>
+      <div class="card-bio">My Business Progettazione architettonica dall'idea embrionale alla sua realizzazione con una particolare cura del dettaglio</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:3472106206">📞 3472106206</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=K6K%2FOzffm4ThjpZXDHiCig%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://cdn.bniconnectglobal.com/images/profile-default.jpg" alt="Marzia  Baldassarre" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Marzia</span> <span class="card-lastname">Baldassarre</span></h3>
+        <div class="card-role">Estate Planning Law</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">Mrs. Marzia  Baldassarre Avvocato Piazza Colombo n.4 Sanremo 18038</div>
+      </div>
+      <div class="card-address">📍 Avvocato, Piazza Colombo n.4, Sanremo</div>
+      <div class="card-bio">My Business Avvocato</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:3498211488">📞 3498211488</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=SG%2Fz5osbgaO1FXo3xBpV7Q%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=633e96b0886703000126f823" alt="Maurizio Brogna" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Maurizio</span> <span class="card-lastname">Brogna</span></h3>
+        <div class="card-role">Construction (Other)</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">Mr. Maurizio Brogna Calcestruzzi Valle Armea srl Corso Limone Piemonte Via Valle Armea Sanremo Ventimiglia Italia/liguria/imperia 18039</div>
+      </div>
+      <div class="card-address">📍 Calcestruzzi Valle Armea srl, Corso Limone Piemonte, Via Valle Armea Sanremo</div>
+      <div class="card-bio">My Business Produzione e fornitura calcestruzzo Calcestruzzi speciali (alleggerito colorato Drenante blocchi in cemento di forme e misure differenti fibrorinforzati)</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:0184510008">📞 0184510008</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=LVt0AIOdHCuItNEuk4Z3VQ%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=6969dfd3af65f80001b337ec" alt="Oscar Martinelli" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Oscar</span> <span class="card-lastname">Martinelli</span></h3>
+        <div class="card-role">Restaurant</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">Mr. Oscar Martinelli Horses srls Corso Francesco Rossi 1 Bordighera 18012</div>
+      </div>
+      <div class="card-address">📍 Horses srls, Corso Francesco Rossi 1, Bordighera</div>
+      <div class="card-bio">My Business “U cavetu” Un gruppo giovane ma con esperienze a livello mondiale nel campo della ristorazione. Un’osteria “moderna” affiancata da un lounge bar di livello immerso nella pineta di Bordighera. Location tra i pini marittimi e la Pineta storica, adatta per una cena di livello e/o occasioni speciali come Battesimi, cresime e matrimoni</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:3206494434">📞 320 6494434</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=Et1KxaENh9RVGFL1sUtNlQ%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=6331bd73e4b0a2de8bd70364" alt="Paolo Fioroni" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Paolo</span> <span class="card-lastname">Fioroni</span></h3>
+        <div class="card-role">Commercial Insurance</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">Mr. Paolo Fioroni Assicurazioni Sanremo 2004 S.a.s. Via Feraldi, 3 Sanremo 18038</div>
+      </div>
+      <div class="card-address">📍 Assicurazioni Sanremo 2004 S.a.s., Via Feraldi, 3, Sanremo</div>
+      
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:0184592166">📞 0184592166</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=oSVuqfUwOK7dr5122V9%2BhA%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=645b9c6fe4b043e77e2faf14" alt="Rito Julio Alvarez" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Rito</span> <span class="card-lastname">Julio Alvarez</span></h3>
+        <div class="card-role">Human Resources</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        <img class="card-company-logo" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=63fdb917e4b0855831e6b06f" alt="logo">
+        <div class="card-company">Mr. Rito Julio Alvarez Associazione Oasi Angeli di Pace ETS Via Giovanni Marsaglia, 6 Sanremo 18038</div>
+      </div>
+      <div class="card-address">📍 Associazione Oasi Angeli di Pace ETS, Via Giovanni Marsaglia, 6, Sanremo</div>
+      <div class="card-bio">My Business No Profit</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:+393809022879">📞 +39 380 9022879</a>
+      
+      <div class="card-social-row"><a class="card-social" href="https://www.facebook.com/AngelidiPaceSanremoODV" target="_blank" title="Facebook"><img src="https://www.google.com/s2/favicons?domain=facebook.com" alt="Facebook" width="16" height="16"></a></div>
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=8ZnK9tTpYIvEsSq%2FOYJoWQ%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=688d2283e435ca00015a5602" alt="Roberto D’Agostino" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Roberto</span> <span class="card-lastname">D’Agostino</span></h3>
+        <div class="card-role">Hotel</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">www.rdaluxurysolutions.it</div>
+      </div>
+      <div class="card-address">📍 RDA Luxury Solutions srl, Via dei bagni 1, Bordighera</div>
+      
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:0184716667">📞 0184716667</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=MnCb4LhX2tRWDsyeRBBZYQ%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=685062081ec9a200013cfe10" alt="Roberto Medori" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Roberto</span> <span class="card-lastname">Medori</span></h3>
+        <div class="card-role">Home Furnishings</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">Mr. Roberto Medori Roberto Medori Arredamenti via Turati 1 Ventimiglia 18039</div>
+      </div>
+      <div class="card-address">📍 Roberto Medori Arredamenti, via Turati 1, Ventimiglia</div>
+      
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:+393470914851">📞 +39 347 091 4851</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=ArSKxaGQMQUFCh7XvDbscQ%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=633ef0541f0f1f0001a47dc0" alt="Samuel Lorenzi" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Samuel</span> <span class="card-lastname">Lorenzi</span></h3>
+        <div class="card-role">Agriculture (Other)</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">Mr. Samuel Lorenzi az.ag. Ballestra & Lorenzi ssa Fraz. Varase 23 Ventimiglia Italia/Liguria/Imperia 18039</div>
+      </div>
+      <div class="card-address">📍 az.ag. Ballestra & Lorenzi ssa, Fraz. Varase 23, Ventimiglia</div>
+      <div class="card-bio">My Business Produzione e commercializzazione di cactus e succulente dal 1960. Facciamo vendita principalmente all’ingrosso ma siamo disponibili anche per il minuto.</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:+393402430009">📞 +393402430009</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=qqwqdcWXv7WH7cqWczRG4Q%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=67cdb6e5e4b0d3447b916d47" alt="Santo Polimeni" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Santo</span> <span class="card-lastname">Polimeni</span></h3>
+        <div class="card-role">Blacksmith</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        <img class="card-company-logo" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=67cb4785eb9d5f0001662c50" alt="logo">
+        <div class="card-company">www.tettofacile.it</div>
+      </div>
+      <div class="card-address">📍 POLIMENI FRANCE SARL, Braie 276, CAMPOROSSO</div>
+      <div class="card-bio">My Business - Strutture tralicciate modulari in acciaio zincato a caldo per costruzioni a secco: www.tettofacile.com - Carpenteria medio pesante - Taglio e foratura lamiera con plasma a controllo numerico ( dimens.max 6000x2500x60 mm) - Manufatti in ferro ed acciaio inox - Lavorazioni artistiche in ferro battuto dal 1964</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:0184253540">📞 0184253540</a>
+      
+      <div class="card-social-row"><a class="card-social" href="https://www.youtube.com/channel/UC5Io_4HZfFWWOiNrTS_dr4w" target="_blank" title="Sito web"><img src="https://www.google.com/s2/favicons?domain=google.com" alt="Sito web" width="16" height="16"></a></div>
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=9yPNpsAiydZP9zmquMaXJg%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=633e7f6ae4b0a2de8bd748d1" alt="Stefania Virno" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Stefania</span> <span class="card-lastname">Virno</span></h3>
+        <div class="card-role">Alternative Wellness</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        <img class="card-company-logo" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=63400e3de4b0a2de8bd7542c" alt="logo">
+        <div class="card-company">www.studioriflessologico.com</div>
+      </div>
+      <div class="card-address">📍 Virno Stefania, via Roma 40, ventimiglia</div>
+      <div class="card-bio">My Business Riflessologia plantare e corporea. La riflessologia è una medicina alternativa ma anche complementare a quella tradizionale. Alternativa perché si possono alleviare e risolvere fastidi quotidiani senza dover ricorrere a farmaci. Complementare perché in realtà questa pratica può tranquillamente “collaborare” con la medicina tradizionale. Come? Nei casi di malattia più grave può semplicemente dare un sollievo al paziente dal dolore e depurare l’organismo dall’eccesso di farmaci. Nei casi di dolori e fastidi quotidiani invece può viaggiare di pari passo alla medicina tradizionale per incrementare l’effetto del farmaco e lavorare alla radice del problema, non solo sulla causa. Inoltre lavora in prevenzione, materia fortemente sentita anche dalla medicina tradizionale. Il piede è la chiave di lettura per interpretare i bisogni di una persona. In base a ciò che si legge si effettueranno manualità di massaggio su specifiche aree del corpo, in base alle esigenze della persona.</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:3358499898">📞 3358499898</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=2kFtTec1Z2Ftkxp2%2FgVz9Q%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=63288d65d2bbf50001b55ed5" alt="Stefano Dodaro" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Stefano</span> <span class="card-lastname">Dodaro</span></h3>
+        <div class="card-role">Digital Marketing</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        <img class="card-company-logo" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=694bb9fbe4b0cfa07ed59ae7" alt="logo">
+        <div class="card-company">Www.wearegorilla.it</div>
+      </div>
+      <div class="card-address">📍 Gorilla SAS di Stefano Dodaro e c., Via Colonnello Aprosio 208, Vallecrosia</div>
+      <div class="card-bio">My Business Strutturate campagne marketing utilizzando tutti i canali disponibili online e offline. Siti web, landing page, campagne Ads e gestione  dei social sono parte integrante del mio lavoro..il resto? Creatività  e problem solving!</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:3493554146">📞 3493554146</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=kOnM7mhyL9nXlRW7i9P8sg%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <div class="card-header">
+      <img class="card-avatar" src="https://bni-riviereliguri.it/web/open/appsCmsImageDownload?imageObjectId=69276c802bc9ae00019b83b2" alt="Valentina  Ioviero" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-avatar-placeholder" style="display:none">👤</div>
+      <div class="card-header-info">
+        <h3><span class="card-firstname">Valentina</span> <span class="card-lastname">Ioviero</span></h3>
+        <div class="card-role">Retail (Other)</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-company-row">
+        
+        <div class="card-company">Miss Valentina  Ioviero Fratelli Ioviero Società cooperativa Via Pasteur n 197 Bordighera 18012</div>
+      </div>
+      <div class="card-address">📍 Fratelli Ioviero Società cooperativa, Via Pasteur n 197, Bordighera</div>
+      <div class="card-bio">My Business Pescheria La nostra è un’attività a conduzione familiare che ogni giorno offre ai clienti pesce fresco a chilometro zero, pescato direttamente da noi. Ci troviamo presso il Mercato Coperto di Bordighera, in Piazza Garibaldi, e siamo aperti dal martedì al sabato, dalle ore 8:00 alle ore 13:00 (tempo e mare permettendo). Ittiturismo Nel periodo estivo proponiamo un’esperienza di ittiturismo a bordo della nostra imbarcazione attrezzata con cucina, dove serviamo il pescato del giorno in un contesto autentico e unico. Ci troviamo al Porto di Bordighera, lato Madonnina, presso il muraglione con le balene (tempo e mare permettendo): l’occasione perfetta per assaporare pesce fresco direttamente in mare.</div>
+    </div>
+    <div class="card-footer">
+      <a class="card-phone" href="tel:3299418904">📞 3299418904</a>
+      
+      
+      <a class="card-detail-link" href="https://bni-riviereliguri.it/17-riviere-liguri-corsaro-nero/it/memberdetails?encryptedMemberId=ubacJ%2B7sEsLgRYRBrz3JVA%3D%3D" target="_blank">Dettagli →</a>
+    </div>
+  </div>
+</div>
+<footer class="site-footer">
+  <strong>BNI Sanremo – Capitolo Corsaro Nero</strong><br>
+  © 2025 BNI Global LLC. All Rights Reserved.
+</footer>
+</body>
+</html>
