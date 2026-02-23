@@ -14,7 +14,7 @@ Esecuzione:
     python bni_scraper.py
     
 Output:
-    bni_sanremo_members.html  (apri nel browser)
+    index.html  (apri nel browser)
 """
 
 import requests
@@ -551,7 +551,7 @@ def render_card(m: dict) -> str:
 # ─── Main ───────────────────────────────────────────────────────────────────────
 
 def main():
-    output_file = "bni_sanremo_members.html"
+    output_file = "index.html"
 
     session = requests.Session()
     session.headers.update(SESSION_HEADERS)
