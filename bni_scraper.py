@@ -4,7 +4,7 @@ BNI Ventimiglia – Corsaro Nero – Member Scraper
 ============================================
 Genera: index.html
 
-Logo: metti il file del logo BNI nella stessa cartella
+Logo: metti il file del logo BNI nella cartella /img
       e rinominalo  bni_logo.png
 
 Requisiti:
@@ -301,8 +301,8 @@ HTML_HEAD = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BNI Ventimiglia – Corsaro Nero | Membri</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="bni_logo.png">
-<link rel="apple-touch-icon" href="bni_logo.png">
+<link rel="icon" type="image/png" href="./img/bni_logo.png">
+<link rel="apple-touch-icon" href="./img/bni_logo.png">
 <style>
 :root{
   --red:#E2001A;--dark-red:#B5001A;--white:#fff;--off-white:#f7f7f7;--gray:#555;--border:#e0e0e0;
@@ -519,7 +519,7 @@ body{font-family:'Lato',sans-serif;background:var(--off-white);color:#222}
   <div class="hero-left">
     <!--
       LOGO: rinomina il file del logo BNI come  bni_logo.png
-            e mettilo nella stessa cartella di questo script.
+            e mettilo nella cartella ./img di questo script.
             Se non esiste, viene mostrato il testo di fallback.
     -->
     <img class="bni-logo-large"
