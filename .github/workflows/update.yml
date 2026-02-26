@@ -25,7 +25,7 @@ jobs:
         run: pip install requests beautifulsoup4
 
       - name: Esegui scraper
-        run: python bni_scraper_ventimiglia.py
+        run: python bni_scraper.py
 
       - name: Commit e push se ci sono modifiche
         run: |
