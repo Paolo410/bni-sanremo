@@ -253,17 +253,21 @@ def parse_member_detail(soup: BeautifulSoup, member: dict) -> dict:
     # Bio
     bio = ""
     bio_sec = soup.select_one(".widgetMemberTxtVideo")
+
     if bio_sec:
         paras = []
         for el in bio_sec.find_all(["p", "div"], recursive=False):
             t = el.get_text(" ", strip=True)
-            if t and t.lower() not in ("my business", "il mio business", ""):
+            if t:
                 paras.append(t)
-        if paras:
-            bio = " ".join(paras)
-        else:
-            bio = re.sub(r"^(My Business|Il mio business)\s*", "",
-                         bio_sec.get_text(" ", strip=True), flags=re.I).strip()
+
+        bio = " ".join(paras).strip()
+
+        # Rimuove "My Business" o "Il mio business" SOLO se sono all'inizio
+        bio = re.sub(r"^(my business|il mio business)\b[\s:,-]*",
+                    "",
+                    bio,
+                    flags=re.I).strip()
 
     # Logo aziendale
     company_logo = ""
