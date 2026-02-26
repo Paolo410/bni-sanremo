@@ -559,7 +559,7 @@ body{font-family:'Lato',sans-serif;background:var(--off-white);color:#222}
 <div class="hero-footer">
   <strong>BNI VENTIMIGLIA &ndash; Capitolo Corsaro Nero</strong><br>
   INCONTRO SETTIMANALE: Ogni venerd&igrave; ore 7:00<br>
-  Ristorante Palo Santo &ndash; Passeggiata G. Marconi, 5/48-49 &ndash; Ventimiglia (IM)
+  Ristorante Palo Santo &ndash; Passeggiata G. Marconi, 5/48-49 &ndash; Ventimiglia (IM), 18039
 </div>
 
 <!-- ═══════════════════════════ TASTO "VIENI A TROVARCI" ══ -->
