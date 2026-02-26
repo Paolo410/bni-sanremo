@@ -5,7 +5,7 @@ BNI Ventimiglia – Corsaro Nero – Member Scraper
 Genera: index.html
 
 Logo: metti il file del logo BNI nella cartella /img
-      e rinominalo  bni_favicon.png
+      e rinominalo  bni_favicon_without_background.png
 
 Requisiti:
     pip install requests beautifulsoup4
@@ -301,8 +301,8 @@ HTML_HEAD = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BNI Ventimiglia – Corsaro Nero | Membri</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="./img/bni_favicon.png">
-<link rel="apple-touch-icon" href="./img/bni_favicon.png">
+<link rel="icon" type="image/png" href="./img/bni_favicon_without_background.png">
+<link rel="apple-touch-icon" href="./img/bni_favicon_without_background.png">
 <style>
 :root{
   --red:#E2001A;--dark-red:#B5001A;--white:#fff;--off-white:#f7f7f7;--gray:#555;--border:#e0e0e0;
